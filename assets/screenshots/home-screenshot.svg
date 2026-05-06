@@ -1,0 +1,132 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#0f0f0f"/>
+  
+  <!-- Sidebar -->
+  <rect width="250" height="900" fill="#121212"/>
+  <circle cx="125" cy="50" r="30" fill="#1DB954"/>
+  <text x="125" y="58" font-size="28" font-weight="bold" fill="white" text-anchor="middle">♪</text>
+  <text x="125" y="90" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Spotify</text>
+  
+  <!-- Sidebar Menu -->
+  <g id="sidebar-menu">
+    <text x="20" y="140" font-size="12" fill="#b3b3b3" font-weight="bold">MENU</text>
+    <text x="20" y="170" font-size="12" fill="white">🏠 Home</text>
+    <text x="20" y="195" font-size="12" fill="#b3b3b3">🔍 Search</text>
+    <text x="20" y="220" font-size="12" fill="#b3b3b3">📚 Your Library</text>
+    <text x="20" y="270" font-size="12" fill="#b3b3b3" font-weight="bold">PLAYLISTS</text>
+    <text x="20" y="300" font-size="12" fill="#b3b3b3">♪ Liked Songs</text>
+    <text x="20" y="325" font-size="12" fill="#b3b3b3">🎵 Jazz Essentials</text>
+    <text x="20" y="350" font-size="12" fill="#b3b3b3">🎶 Chill Vibes</text>
+    <text x="20" y="375" font-size="12" fill="#b3b3b3">🎤 Classics</text>
+  </g>
+  
+  <!-- Main Content Area -->
+  <rect x="250" y="0" width="950" height="900" fill="#181818"/>
+  
+  <!-- Header -->
+  <rect x="250" y="0" width="950" height="60" fill="#282828" opacity="0.8"/>
+  <text x="1100" y="35" font-size="14" fill="white" text-anchor="end">👤 Profile</text>
+  
+  <!-- Welcome Section -->
+  <text x="270" y="100" font-size="28" fill="white" font-weight="bold">Good Morning</text>
+  <text x="270" y="125" font-size="12" fill="#b3b3b3">Welcome back to your music</text>
+  
+  <!-- Recent Items Row 1 -->
+  <text x="270" y="165" font-size="16" fill="white" font-weight="bold">Recently Played</text>
+  
+  <!-- Card 1 -->
+  <rect x="270" y="185" width="160" height="160" fill="#282828" rx="8"/>
+  <rect x="280" y="195" width="140" height="85" fill="#1DB954" rx="4"/>
+  <text x="350" y="243" font-size="32" fill="white" text-anchor="middle" font-weight="bold">♪</text>
+  <text x="350" y="290" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Kind of Blue</text>
+  <text x="350" y="310" font-size="11" fill="#b3b3b3" text-anchor="middle">Miles Davis</text>
+  
+  <!-- Card 2 -->
+  <rect x="450" y="185" width="160" height="160" fill="#282828" rx="8"/>
+  <rect x="460" y="195" width="140" height="85" fill="#FF6B9D" rx="4"/>
+  <text x="530" y="243" font-size="32" fill="white" text-anchor="middle" font-weight="bold">♫</text>
+  <text x="530" y="290" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Lover</text>
+  <text x="530" y="310" font-size="11" fill="#b3b3b3" text-anchor="middle">Taylor Swift</text>
+  
+  <!-- Card 3 -->
+  <rect x="630" y="185" width="160" height="160" fill="#282828" rx="8"/>
+  <rect x="640" y="195" width="140" height="85" fill="#4B7EC9" rx="4"/>
+  <text x="710" y="243" font-size="32" fill="white" text-anchor="middle" font-weight="bold">🎵</text>
+  <text x="710" y="290" font-size="12" fill="white" text-anchor="middle" font-weight="bold">The Wall</text>
+  <text x="710" y="310" font-size="11" fill="#b3b3b3" text-anchor="middle">Pink Floyd</text>
+  
+  <!-- Card 4 -->
+  <rect x="810" y="185" width="160" height="160" fill="#282828" rx="8"/>
+  <rect x="820" y="195" width="140" height="85" fill="#D946A6" rx="4"/>
+  <text x="890" y="243" font-size="32" fill="white" text-anchor="middle" font-weight="bold">♪</text>
+  <text x="890" y="290" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Rumours</text>
+  <text x="890" y="310" font-size="11" fill="#b3b3b3" text-anchor="middle">Fleetwood Mac</text>
+  
+  <!-- New Releases Section -->
+  <text x="270" y="385" font-size="16" fill="white" font-weight="bold">New Releases</text>
+  
+  <!-- New Release Card 1 -->
+  <rect x="270" y="405" width="160" height="160" fill="#282828" rx="8"/>
+  <rect x="280" y="415" width="140" height="85" fill="#1ABC9C" rx="4"/>
+  <text x="350" y="463" font-size="32" fill="white" text-anchor="middle" font-weight="bold">🎤</text>
+  <text x="350" y="510" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Blinding Lights</text>
+  <text x="350" y="530" font-size="11" fill="#b3b3b3" text-anchor="middle">The Weeknd</text>
+  
+  <!-- New Release Card 2 -->
+  <rect x="450" y="405" width="160" height="160" fill="#282828" rx="8"/>
+  <rect x="460" y="415" width="140" height="85" fill="#E74C3C" rx="4"/>
+  <text x="530" y="463" font-size="32" fill="white" text-anchor="middle" font-weight="bold">♫</text>
+  <text x="530" y="510" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Good as Hell</text>
+  <text x="530" y="530" font-size="11" fill="#b3b3b3" text-anchor="middle">Lizzo</text>
+  
+  <!-- New Release Card 3 -->
+  <rect x="630" y="405" width="160" height="160" fill="#282828" rx="8"/>
+  <rect x="640" y="415" width="140" height="85" fill="#F39C12" rx="4"/>
+  <text x="710" y="463" font-size="32" fill="white" text-anchor="middle" font-weight="bold">🎵</text>
+  <text x="710" y="510" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Levitating</text>
+  <text x="710" y="530" font-size="11" fill="#b3b3b3" text-anchor="middle">Dua Lipa</text>
+  
+  <!-- New Release Card 4 -->
+  <rect x="810" y="405" width="160" height="160" fill="#282828" rx="8"/>
+  <rect x="820" y="415" width="140" height="85" fill="#3498DB" rx="4"/>
+  <text x="890" y="463" font-size="32" fill="white" text-anchor="middle" font-weight="bold">♪</text>
+  <text x="890" y="510" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Stay</text>
+  <text x="890" y="530" font-size="11" fill="#b3b3b3" text-anchor="middle">The Kid LAROI</text>
+  
+  <!-- Featured Playlists Section -->
+  <text x="270" y="605" font-size="16" fill="white" font-weight="bold">Featured Playlists</text>
+  
+  <!-- Playlist Card 1 -->
+  <rect x="270" y="625" width="330" height="100" fill="#282828" rx="8" opacity="0.8"/>
+  <rect x="285" y="635" width="70" height="70" fill="#1DB954" rx="4"/>
+  <text x="320" y="675" font-size="18" fill="white" text-anchor="middle">♪</text>
+  <text x="375" y="655" font-size="12" fill="white" font-weight="bold">Jazz Vibes</text>
+  <text x="375" y="672" font-size="11" fill="#b3b3b3">Smooth jazz for relaxation</text>
+  
+  <!-- Playlist Card 2 -->
+  <rect x="620" y="625" width="330" height="100" fill="#282828" rx="8" opacity="0.8"/>
+  <rect x="635" y="635" width="70" height="70" fill="#FF6B9D" rx="4"/>
+  <text x="670" y="675" font-size="18" fill="white" text-anchor="middle">♫</text>
+  <text x="725" y="655" font-size="12" fill="white" font-weight="bold">Pop Hits</text>
+  <text x="725" y="672" font-size="11" fill="#b3b3b3">Latest chart-topping tracks</text>
+  
+  <!-- Now Playing Bar -->
+  <rect x="0" y="800" width="1200" height="100" fill="#181818" stroke="#282828" stroke-width="1"/>
+  
+  <!-- Progress Bar -->
+  <rect x="0" y="800" width="1200" height="2" fill="#282828"/>
+  <rect x="0" y="800" width="600" height="2" fill="#1DB954"/>
+  
+  <!-- Track Info -->
+  <circle cx="60" cy="850" r="30" fill="#1DB954"/>
+  <text x="60" y="858" font-size="24" fill="white" text-anchor="middle">♪</text>
+  <text x="100" y="845" font-size="14" fill="white" font-weight="bold">Autumn Leaves - Bill Evans</text>
+  <text x="100" y="865" font-size="12" fill="#b3b3b3">Peace Piece • Playing</text>
+  
+  <!-- Playback Controls -->
+  <text x="1000" y="855" font-size="32" fill="#1DB954" text-anchor="middle">⏮ ⏯ ⏭</text>
+  
+  <!-- Volume Control -->
+  <text x="1130" y="865" font-size="12" fill="#b3b3b3">🔊 80%</text>
+</svg>
