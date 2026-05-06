@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#0f0f0f"/>
+  
+  <!-- Sidebar -->
+  <rect width="250" height="800" fill="#121212"/>
+  <circle cx="125" cy="50" r="30" fill="#1DB954"/>
+  <text x="125" y="58" font-size="28" font-weight="bold" fill="white" text-anchor="middle">♪</text>
+  
+  <!-- Main Content Area -->
+  <rect x="250" y="0" width="950" height="800" fill="#181818"/>
+  
+  <!-- Playlist Header -->
+  <rect x="250" y="20" width="900" height="80" fill="#282828" rx="4"/>
+  <rect x="270" y="35" width="60" height="50" fill="#1DB954" rx="4"/>
+  <text x="300" y="65" font-size="24" fill="white" text-anchor="middle">♪</text>
+  <text x="350" y="50" font-size="20" fill="white" font-weight="bold">Jazz Essentials</text>
+  <text x="350" y="72" font-size="12" fill="#b3b3b3">42 songs • 3 hours 15 min</text>
+  
+  <!-- Playlist Controls -->
+  <circle cx="1100" cy="60" r="25" fill="#1DB954"/>
+  <text x="1100" y="68" font-size="18" fill="white" text-anchor="middle" font-weight="bold">▶</text>
+  
+  <!-- Track List Header -->
+  <rect x="270" y="120" width="900" height="35" fill="#282828"/>
+  <text x="285" y="143" font-size="11" fill="#b3b3b3" font-weight="bold">#</text>
+  <text x="310" y="143" font-size="11" fill="#b3b3b3" font-weight="bold">TITLE</text>
+  <text x="600" y="143" font-size="11" fill="#b3b3b3" font-weight="bold">ARTIST</text>
+  <text x="850" y="143" font-size="11" fill="#b3b3b3" font-weight="bold">ALBUM</text>
+  <text x="1050" y="143" font-size="11" fill="#b3b3b3" font-weight="bold">DURATION</text>
+  
+  <!-- Track 1 -->
+  <g id="track1" class="track">
+    <rect x="270" y="160" width="900" height="50" fill="transparent" class="track-bg"/>
+    <text x="285" y="188" font-size="12" fill="#b3b3b3">1</text>
+    <text x="310" y="188" font-size="12" fill="white" font-weight="bold">Blue Moon</text>
+    <text x="310" y="205" font-size="11" fill="#b3b3b3">Miles Davis</text>
+    <text x="600" y="188" font-size="12" fill="#b3b3b3">Blue Moon</text>
+    <text x="850" y="188" font-size="12" fill="#b3b3b3">Kind of Blue</text>
+    <text x="1050" y="188" font-size="12" fill="#b3b3b3">3:45</text>
+  </g>
+  
+  <!-- Track 2 -->
+  <g id="track2" class="track">
+    <rect x="270" y="215" width="900" height="50" fill="transparent" class="track-bg"/>
+    <text x="285" y="243" font-size="12" fill="#b3b3b3">2</text>
+    <text x="310" y="243" font-size="12" fill="white" font-weight="bold">Autumn Leaves</text>
+    <text x="310" y="260" font-size="11" fill="#b3b3b3">Bill Evans</text>
+    <text x="600" y="243" font-size="12" fill="#b3b3b3">Bill Evans Trio</text>
+    <text x="850" y="243" font-size="12" fill="#b3b3b3">Peace Piece</text>
+    <text x="1050" y="243" font-size="12" fill="#b3b3b3">4:12</text>
+  </g>
+  
+  <!-- Track 3 (Playing) -->
+  <g id="track3" class="track-playing">
+    <rect x="270" y="270" width="900" height="50" fill="#1DB954" opacity="0.15" rx="4"/>
+    <circle cx="290" cy="295" r="6" fill="#1DB954"/>
+    <text x="310" y="298" font-size="12" fill="#1DB954" font-weight="bold">Take Five</text>
+    <text x="310" y="315" font-size="11" fill="#1DB954">Dave Brubeck Quartet</text>
+    <text x="600" y="298" font-size="12" fill="#1DB954">Time Out</text>
+    <text x="850" y="298" font-size="12" fill="#1DB954">Take Five</text>
+    <text x="1050" y="298" font-size="12" fill="#1DB954">5:24</text>
+  </g>
+  
+  <!-- Track 4 -->
+  <g id="track4" class="track">
+    <rect x="270" y="325" width="900" height="50" fill="transparent" class="track-bg"/>
+    <text x="285" y="353" font-size="12" fill="#b3b3b3">4</text>
+    <text x="310" y="353" font-size="12" fill="white" font-weight="bold">Fly Me to the Moon</text>
+    <text x="310" y="370" font-size="11" fill="#b3b3b3">Frank Sinatra</text>
+    <text x="600" y="353" font-size="12" fill="#b3b3b3">Frank Sinatra</text>
+    <text x="850" y="353" font-size="12" fill="#b3b3b3">Songs for Swingin' Lovers</text>
+    <text x="1050" y="353" font-size="12" fill="#b3b3b3">2:58</text>
+  </g>
+  
+  <!-- Track 5 -->
+  <g id="track5" class="track">
+    <rect x="270" y="380" width="900" height="50" fill="transparent" class="track-bg"/>
+    <text x="285" y="408" font-size="12" fill="#b3b3b3">5</text>
+    <text x="310" y="408" font-size="12" fill="white" font-weight="bold">So What</text>
+    <text x="310" y="425" font-size="11" fill="#b3b3b3">Miles Davis</text>
+    <text x="600" y="408" font-size="12" fill="#b3b3b3">Miles Davis Quintet</text>
+    <text x="850" y="408" font-size="12" fill="#b3b3b3">Kind of Blue</text>
+    <text x="1050" y="408" font-size="12" fill="#b3b3b3">9:02</text>
+  </g>
+  
+  <!-- Track 6 -->
+  <g id="track6" class="track">
+    <rect x="270" y="435" width="900" height="50" fill="transparent" class="track-bg"/>
+    <text x="285" y="463" font-size="12" fill="#b3b3b3">6</text>
+    <text x="310" y="463" font-size="12" fill="white" font-weight="bold">In a Sentimental Mood</text>
+    <text x="310" y="480" font-size="11" fill="#b3b3b3">Duke Ellington</text>
+    <text x="600" y="463" font-size="12" fill="#b3b3b3">Duke Ellington</text>
+    <text x="850" y="463" font-size="12" fill="#b3b3b3">Jazz Classics</text>
+    <text x="1050" y="463" font-size="12" fill="#b3b3b3">3:35</text>
+  </g>
+  
+  <!-- Track 7 -->
+  <g id="track7" class="track">
+    <rect x="270" y="490" width="900" height="50" fill="transparent" class="track-bg"/>
+    <text x="285" y="518" font-size="12" fill="#b3b3b3">7</text>
+    <text x="310" y="518" font-size="12" fill="white" font-weight="bold">Chet's Tune</text>
+    <text x="310" y="535" font-size="11" fill="#b3b3b3">Chet Baker</text>
+    <text x="600" y="518" font-size="12" fill="#b3b3b3">Chet Baker</text>
+    <text x="850" y="518" font-size="12" fill="#b3b3b3">Chet is Back</text>
+    <text x="1050" y="518" font-size="12" fill="#b3b3b3">4:28</text>
+  </g>
+  
+  <!-- Track 8 -->
+  <g id="track8" class="track">
+    <rect x="270" y="545" width="900" height="50" fill="transparent" class="track-bg"/>
+    <text x="285" y="573" font-size="12" fill="#b3b3b3">8</text>
+    <text x="310" y="573" font-size="12" fill="white" font-weight="bold">Stella by Starlight</text>
+    <text x="310" y="590" font-size="11" fill="#b3b3b3">Art Tatum</text>
+    <text x="600" y="573" font-size="12" fill="#b3b3b3">Art Tatum</text>
+    <text x="850" y="573" font-size="12" fill="#b3b3b3">Art of Jazz</text>
+    <text x="1050" y="573" font-size="12" fill="#b3b3b3">5:10</text>
+  </g>
+  
+  <!-- Now Playing Bar -->
+  <rect x="0" y="700" width="1200" height="100" fill="#181818" stroke="#282828" stroke-width="1"/>
+  
+  <!-- Progress Bar -->
+  <rect x="0" y="700" width="1200" height="2" fill="#282828"/>
+  <rect x="0" y="700" width="400" height="2" fill="#1DB954"/>
+  
+  <!-- Track Info -->
+  <circle cx="60" cy="750" r="30" fill="#1DB954"/>
+  <text x="60" y="758" font-size="24" fill="white" text-anchor="middle">♪</text>
+  <text x="100" y="745" font-size="14" fill="white" font-weight="bold">Take Five - Dave Brubeck Quartet</text>
+  <text x="100" y="765" font-size="12" fill="#b3b3b3">Time Out • Playing</text>
+  
+  <!-- Playback Controls -->
+  <text x="1000" y="755" font-size="32" fill="#1DB954" text-anchor="middle">⏮ ⏯ ⏭</text>
+  
+  <!-- Volume Control -->
+  <text x="1130" y="765" font-size="12" fill="#b3b3b3">🔊 75%</text>
+</svg>
