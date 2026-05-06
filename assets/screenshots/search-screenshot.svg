@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#0f0f0f"/>
+  
+  <!-- Sidebar -->
+  <rect width="250" height="800" fill="#121212"/>
+  <circle cx="125" cy="50" r="30" fill="#1DB954"/>
+  <text x="125" y="58" font-size="28" font-weight="bold" fill="white" text-anchor="middle">♪</text>
+  
+  <!-- Main Content Area -->
+  <rect x="250" y="0" width="950" height="800" fill="#181818"/>
+  
+  <!-- Search Header -->
+  <rect x="250" y="20" width="900" height="60" fill="#282828" rx="30"/>
+  <text x="280" y="58" font-size="16" fill="#b3b3b3">🔍 Search songs, artists, playlists...</text>
+  
+  <!-- Search Results Title -->
+  <text x="270" y="120" font-size="20" fill="white" font-weight="bold">Search Results for "Jazz"</text>
+  
+  <!-- Track Results -->
+  <g id="track1">
+    <rect x="270" y="140" width="900" height="80" fill="#282828" rx="8"/>
+    <rect x="280" y="150" width="60" height="60" fill="#1DB954" rx="4"/>
+    <text x="310" y="190" font-size="24" fill="white" text-anchor="middle" font-weight="bold">♪</text>
+    <text x="360" y="170" font-size="16" fill="white" font-weight="bold">Blue Moon</text>
+    <text x="360" y="190" font-size="12" fill="#b3b3b3">Miles Davis • Jazz Classics</text>
+    <text x="1130" y="185" font-size="14" fill="#1DB954" text-anchor="end">3:45</text>
+  </g>
+  
+  <g id="track2">
+    <rect x="270" y="240" width="900" height="80" fill="#282828" rx="8"/>
+    <rect x="280" y="250" width="60" height="60" fill="#1DB954" rx="4"/>
+    <text x="310" y="290" font-size="24" fill="white" text-anchor="middle" font-weight="bold">♫</text>
+    <text x="360" y="270" font-size="16" fill="white" font-weight="bold">Autumn Leaves</text>
+    <text x="360" y="290" font-size="12" fill="#b3b3b3">Bill Evans • Jazz Standards</text>
+    <text x="1130" y="285" font-size="14" fill="#1DB954" text-anchor="end">4:12</text>
+  </g>
+  
+  <g id="track3">
+    <rect x="270" y="340" width="900" height="80" fill="#282828" rx="8"/>
+    <rect x="280" y="350" width="60" height="60" fill="#1DB954" rx="4"/>
+    <text x="310" y="390" font-size="24" fill="white" text-anchor="middle" font-weight="bold">🎵</text>
+    <text x="360" y="370" font-size="16" fill="white" font-weight="bold">Take Five</text>
+    <text x="360" y="390" font-size="12" fill="#b3b3b3">Dave Brubeck Quartet • Time Out</text>
+    <text x="1130" y="385" font-size="14" fill="#1DB954" text-anchor="end">5:24</text>
+  </g>
+  
+  <g id="track4">
+    <rect x="270" y="440" width="900" height="80" fill="#282828" rx="8"/>
+    <rect x="280" y="450" width="60" height="60" fill="#1DB954" rx="4"/>
+    <text x="310" y="490" font-size="24" fill="white" text-anchor="middle" font-weight="bold">♪</text>
+    <text x="360" y="470" font-size="16" fill="white" font-weight="bold">Fly Me to the Moon</text>
+    <text x="360" y="490" font-size="12" fill="#b3b3b3">Frank Sinatra • Songs for Swingin' Lovers</text>
+    <text x="1130" y="485" font-size="14" fill="#1DB954" text-anchor="end">2:58</text>
+  </g>
+  
+  <!-- Now Playing Bar -->
+  <rect x="0" y="700" width="1200" height="100" fill="#181818" stroke="#282828" stroke-width="1"/>
+  <circle cx="60" cy="750" r="30" fill="#1DB954"/>
+  <text x="60" y="758" font-size="24" fill="white" text-anchor="middle">♪</text>
+  <text x="100" y="745" font-size="14" fill="white" font-weight="bold">Now Playing</text>
+  <text x="100" y="765" font-size="12" fill="#b3b3b3">Blue Moon - Miles Davis</text>
+</svg>
