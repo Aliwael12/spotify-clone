@@ -1,0 +1,148 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#0f0f0f"/>
+  
+  <!-- Title -->
+  <text x="700" y="50" font-size="36" fill="#1DB954" text-anchor="middle" font-weight="bold">🏗️ System Architecture & Data Flow</text>
+  
+  <!-- Layer 1: Client/Frontend -->
+  <g id="frontend-layer">
+    <rect x="50" y="100" width="320" height="280" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
+    <text x="210" y="140" font-size="18" fill="#1DB954" text-anchor="middle" font-weight="bold">🖥️ Client Layer</text>
+    <text x="210" y="165" font-size="12" fill="#b3b3b3" text-anchor="middle">React.js Application</text>
+    
+    <!-- Components -->
+    <rect x="65" y="180" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="210" y="205" font-size="11" fill="white" text-anchor="middle">Components</text>
+    <text x="210" y="220" font-size="10" fill="#b3b3b3" text-anchor="middle">UI, Search, Player, Playlists</text>
+    
+    <!-- State Management -->
+    <rect x="65" y="240" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="210" y="265" font-size="11" fill="white" text-anchor="middle">State Management</text>
+    <text x="210" y="280" font-size="10" fill="#b3b3b3" text-anchor="middle">React Context / Redux</text>
+    
+    <!-- Event Handlers -->
+    <rect x="65" y="300" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="210" y="325" font-size="11" fill="white" text-anchor="middle">Event Handling</text>
+    <text x="210" y="340" font-size="10" fill="#b3b3b3" text-anchor="middle">User Interactions</text>
+  </g>
+  
+  <!-- Arrow 1: Client to Backend -->
+  <path d="M 370 240 L 420 240" stroke="#1DB954" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="395" y="230" font-size="10" fill="#1DB954">HTTP Request</text>
+  
+  <!-- Layer 2: Backend/API Server -->
+  <g id="backend-layer">
+    <rect x="420" y="100" width="320" height="280" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
+    <text x="580" y="140" font-size="18" fill="#1DB954" text-anchor="middle" font-weight="bold">⚡ Backend Layer</text>
+    <text x="580" y="165" font-size="12" fill="#b3b3b3" text-anchor="middle">Node.js + Express</text>
+    
+    <!-- Routes -->
+    <rect x="435" y="180" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="580" y="205" font-size="11" fill="white" text-anchor="middle">API Routes</text>
+    <text x="580" y="220" font-size="10" fill="#b3b3b3" text-anchor="middle">/search, /playlist, /auth, /user</text>
+    
+    <!-- Middleware -->
+    <rect x="435" y="240" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="580" y="265" font-size="11" fill="white" text-anchor="middle">Middleware & Services</text>
+    <text x="580" y="280" font-size="10" fill="#b3b3b3" text-anchor="middle">Auth, CORS, Error Handling</text>
+    
+    <!-- Business Logic -->
+    <rect x="435" y="300" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="580" y="325" font-size="11" fill="white" text-anchor="middle">Business Logic</text>
+    <text x="580" y="340" font-size="10" fill="#b3b3b3" text-anchor="middle">Token Management, OAuth</text>
+  </g>
+  
+  <!-- Arrow 2: Backend to Spotify APIs -->
+  <path d="M 740 240 L 790 240" stroke="#1DB954" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="765" y="230" font-size="10" fill="#1DB954">HTTP Request</text>
+  
+  <!-- Layer 3: External APIs -->
+  <g id="api-layer">
+    <rect x="790" y="100" width="320" height="280" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
+    <text x="950" y="140" font-size="18" fill="#1DB954" text-anchor="middle" font-weight="bold">🎵 Spotify APIs</text>
+    <text x="950" y="165" font-size="12" fill="#b3b3b3" text-anchor="middle">External Services</text>
+    
+    <!-- Web API -->
+    <rect x="805" y="180" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="950" y="205" font-size="11" fill="white" text-anchor="middle">Web API</text>
+    <text x="950" y="220" font-size="10" fill="#b3b3b3" text-anchor="middle">Search, Playlists, User Data</text>
+    
+    <!-- WebPlayback API -->
+    <rect x="805" y="240" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="950" y="265" font-size="11" fill="white" text-anchor="middle">WebPlayback API</text>
+    <text x="950" y="280" font-size="10" fill="#b3b3b3" text-anchor="middle">Play, Pause, Volume Control</text>
+    
+    <!-- OAuth 2.0 -->
+    <rect x="805" y="300" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
+    <text x="950" y="325" font-size="11" fill="white" text-anchor="middle">OAuth 2.0 Service</text>
+    <text x="950" y="340" font-size="10" fill="#b3b3b3" text-anchor="middle">Authentication & Tokens</text>
+  </g>
+  
+  <!-- Arrow 3: Spotify APIs back to Backend -->
+  <path d="M 790 400 L 740 400" stroke="#FFD700" stroke-width="3" fill="none" marker-end="url(#arrowhead-gold)"/>
+  <text x="750" y="420" font-size="10" fill="#FFD700">JSON Response</text>
+  
+  <!-- Arrow 4: Backend back to Client -->
+  <path d="M 420 400 L 370 400" stroke="#FFD700" stroke-width="3" fill="none" marker-end="url(#arrowhead-gold)"/>
+  <text x="375" y="420" font-size="10" fill="#FFD700">JSON Response</text>
+  
+  <!-- Data Flow Examples -->
+  <g id="example-flows">
+    <!-- Search Flow -->
+    <g id="search-flow">
+      <rect x="50" y="470" width="560" height="140" fill="#282828" opacity="0.5" rx="8" stroke="#1DB954" stroke-width="1" stroke-dasharray="5,5"/>
+      <text x="330" y="495" font-size="14" fill="#1DB954" text-anchor="middle" font-weight="bold">📝 Example: Search Flow</text>
+      
+      <text x="65" y="525" font-size="11" fill="white">1. User types: "Kind of Blue"</text>
+      <text x="65" y="545" font-size="11" fill="white">2. React sends: GET /api/search?q=Kind+of+Blue</text>
+      <text x="65" y="565" font-size="11" fill="white">3. Backend forwards to Spotify Web API</text>
+      <text x="65" y="585" font-size="11" fill="white">4. Spotify returns track data (JSON)</text>
+      <text x="65" y="605" font-size="11" fill="white">5. Backend processes & sends to React</text>
+    </g>
+    
+    <!-- Playback Flow -->
+    <g id="playback-flow">
+      <rect x="790" y="470" width="560" height="140" fill="#282828" opacity="0.5" rx="8" stroke="#1DB954" stroke-width="1" stroke-dasharray="5,5"/>
+      <text x="1070" y="495" font-size="14" fill="#1DB954" text-anchor="middle" font-weight="bold">▶️ Example: Playback Flow</text>
+      
+      <text x="805" y="525" font-size="11" fill="white">1. User clicks play button</text>
+      <text x="805" y="545" font-size="11" fill="white">2. React sends: POST /api/player/play</text>
+      <text x="805" y="565" font-size="11" fill="white">3. Backend calls Spotify WebPlayback API</text>
+      <text x="805" y="585" font-size="11" fill="white">4. Spotify begins playback on device</text>
+      <text x="805" y="605" font-size="11" fill="white">5. Real-time state updates to React</text>
+    </g>
+  </g>
+  
+  <!-- Key Technologies -->
+  <g id="technologies">
+    <rect x="50" y="700" width="1280" height="150" fill="#282828" rx="8" stroke="#1DB954" stroke-width="1"/>
+    <text x="690" y="730" font-size="14" fill="#1DB954" text-anchor="middle" font-weight="bold">🛠️ Key Technologies & Security</text>
+    
+    <!-- Frontend Tech -->
+    <text x="70" y="760" font-size="11" fill="white" font-weight="bold">Frontend:</text>
+    <text x="70" y="778" font-size="10" fill="#b3b3b3">React.js • JavaScript ES6+ • CSS3 • Axios/Fetch</text>
+    
+    <!-- Backend Tech -->
+    <text x="70" y="805" font-size="11" fill="white" font-weight="bold">Backend:</text>
+    <text x="70" y="823" font-size="10" fill="#b3b3b3">Node.js • Express.js • OAuth 2.0 • RESTful API</text>
+    
+    <!-- Security -->
+    <text x="550" y="760" font-size="11" fill="white" font-weight="bold">Security:</text>
+    <text x="550" y="778" font-size="10" fill="#b3b3b3">Bearer Token Authentication • CORS Protection • HTTPS</text>
+    
+    <!-- APIs -->
+    <text x="550" y="805" font-size="11" fill="white" font-weight="bold">External APIs:</text>
+    <text x="550" y="823" font-size="10" fill="#b3b3b3">Spotify Web API • Spotify WebPlayback API • OAuth 2.0</text>
+  </g>
+  
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1DB954"/>
+    </marker>
+    <marker id="arrowhead-gold" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FFD700"/>
+    </marker>
+  </defs>
+</svg>
