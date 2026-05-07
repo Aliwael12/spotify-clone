@@ -1,159 +1,198 @@
-<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
-  <!-- Title -->
-  <text x="700" y="50" font-size="36" fill="#1DB954" text-anchor="middle" font-weight="bold">🛠️ Tech Stack & Dependencies</text>
-  
-  <!-- Frontend Column -->
-  <g id="frontend">
-    <rect x="50" y="120" width="320" height="800" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
-    <text x="210" y="160" font-size="20" fill="#1DB954" text-anchor="middle" font-weight="bold">Frontend Stack</text>
-    
-    <!-- React -->
-    <rect x="70" y="190" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="210" y="215" font-size="14" fill="white" text-anchor="middle" font-weight="bold">⚛️ React.js</text>
-    <text x="210" y="240" font-size="11" fill="#b3b3b3" text-anchor="middle">Component-based UI</text>
-    <text x="210" y="255" font-size="11" fill="#b3b3b3" text-anchor="middle">State Management</text>
-    
-    <!-- CSS -->
-    <rect x="70" y="290" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="210" y="315" font-size="14" fill="white" text-anchor="middle" font-weight="bold">💅 CSS3</text>
-    <text x="210" y="340" font-size="11" fill="#b3b3b3" text-anchor="middle">Responsive Design</text>
-    <text x="210" y="355" font-size="11" fill="#b3b3b3" text-anchor="middle">Modern Styling</text>
-    
-    <!-- HTML -->
-    <rect x="70" y="390" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="210" y="415" font-size="14" fill="white" text-anchor="middle" font-weight="bold">📄 HTML5</text>
-    <text x="210" y="440" font-size="11" fill="#b3b3b3" text-anchor="middle">Semantic Markup</text>
-    <text x="210" y="455" font-size="11" fill="#b3b3b3" text-anchor="middle">Accessibility</text>
-    
-    <!-- JavaScript -->
-    <rect x="70" y="490" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="210" y="515" font-size="14" fill="white" text-anchor="middle" font-weight="bold">⚙️ JavaScript (89.3%)</text>
-    <text x="210" y="540" font-size="11" fill="#b3b3b3" text-anchor="middle">DOM Manipulation</text>
-    <text x="210" y="555" font-size="11" fill="#b3b3b3" text-anchor="middle">Event Handling</text>
-    
-    <!-- Axios/Fetch -->
-    <rect x="70" y="590" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="210" y="615" font-size="14" fill="white" text-anchor="middle" font-weight="bold">🌐 HTTP Client</text>
-    <text x="210" y="640" font-size="11" fill="#b3b3b3" text-anchor="middle">API Requests</text>
-    <text x="210" y="655" font-size="11" fill="#b3b3b3" text-anchor="middle">Data Fetching</text>
-    
-    <!-- Styling -->
-    <rect x="70" y="690" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="210" y="715" font-size="14" fill="white" text-anchor="middle" font-weight="bold">🎨 CSS Frameworks</text>
-    <text x="210" y="740" font-size="11" fill="#b3b3b3" text-anchor="middle">Flexbox/Grid</text>
-    <text x="210" y="755" font-size="11" fill="#b3b3b3" text-anchor="middle">Animations</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="'Inter','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F0F0F"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <radialGradient id="ring" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#1DB954" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#1DB954" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- title -->
+  <g transform="translate(40 36)">
+    <circle cx="14" cy="14" r="14" fill="#1DB954"/>
+    <path d="M6 12 q8 -3 16 0 M7 16 q7 -2.5 14 0 M8 20 q6 -2 12 0" stroke="#000" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <text x="38" y="20" fill="#ffffff" font-size="20" font-weight="800">Tech Stack</text>
+    <text y="42" fill="#B3B3B3" font-size="12">Frontend · Backend · Auth · External APIs</text>
   </g>
-  
-  <!-- Backend Column -->
-  <g id="backend">
-    <rect x="410" y="120" width="320" height="800" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
-    <text x="570" y="160" font-size="20" fill="#1DB954" text-anchor="middle" font-weight="bold">Backend Stack</text>
-    
-    <!-- Node.js -->
-    <rect x="430" y="190" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="570" y="215" font-size="14" fill="white" text-anchor="middle" font-weight="bold">🟢 Node.js</text>
-    <text x="570" y="240" font-size="11" fill="#b3b3b3" text-anchor="middle">Runtime Environment</text>
-    <text x="570" y="255" font-size="11" fill="#b3b3b3" text-anchor="middle">V8 Engine</text>
-    
-    <!-- Express.js -->
-    <rect x="430" y="290" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="570" y="315" font-size="14" fill="white" text-anchor="middle" font-weight="bold">⚡ Express.js</text>
-    <text x="570" y="340" font-size="11" fill="#b3b3b3" text-anchor="middle">Web Framework</text>
-    <text x="570" y="355" font-size="11" fill="#b3b3b3" text-anchor="middle">Route Handling</text>
-    
-    <!-- Middleware -->
-    <rect x="430" y="390" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="570" y="415" font-size="14" fill="white" text-anchor="middle" font-weight="bold">🔄 Middleware</text>
-    <text x="570" y="440" font-size="11" fill="#b3b3b3" text-anchor="middle">CORS, Body Parser</text>
-    <text x="570" y="455" font-size="11" fill="#b3b3b3" text-anchor="middle">Authentication</text>
-    
-    <!-- Authentication -->
-    <rect x="430" y="490" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="570" y="515" font-size="14" fill="white" text-anchor="middle" font-weight="bold">🔐 OAuth 2.0</text>
-    <text x="570" y="540" font-size="11" fill="#b3b3b3" text-anchor="middle">Token Management</text>
-    <text x="570" y="555" font-size="11" fill="#b3b3b3" text-anchor="middle">Session Control</text>
-    
-    <!-- Utilities -->
-    <rect x="430" y="590" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="570" y="615" font-size="14" fill="white" text-anchor="middle" font-weight="bold">📦 Utilities</text>
-    <text x="570" y="640" font-size="11" fill="#b3b3b3" text-anchor="middle">dotenv (Config)</text>
-    <text x="570" y="655" font-size="11" fill="#b3b3b3" text-anchor="middle">Axios (HTTP)</text>
-    
-    <!-- Error Handling -->
-    <rect x="430" y="690" width="280" height="80" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="570" y="715" font-size="14" fill="white" text-anchor="middle" font-weight="bold">⚠️ Error Handling</text>
-    <text x="570" y="740" font-size="11" fill="#b3b3b3" text-anchor="middle">Try-Catch Blocks</text>
-    <text x="570" y="755" font-size="11" fill="#b3b3b3" text-anchor="middle">Status Codes</text>
+
+  <!-- 4 columns of pills -->
+  <!-- Frontend -->
+  <g transform="translate(60 90)">
+    <rect width="280" height="600" rx="18" fill="#0E1D2A" stroke="#3D5BDB" stroke-width="1.5"/>
+    <rect width="280" height="46" rx="18" fill="#1F3470"/>
+    <text x="20" y="30" fill="#ffffff" font-size="14" font-weight="800">FRONTEND</text>
+    <text x="260" y="30" fill="#9FB1FF" font-size="11" font-weight="700" text-anchor="end">React · 89.3% JS</text>
+
+    <g transform="translate(20 70)" font-size="13">
+      <g><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">⚛️</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">React 18</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Component-based UI</text>
+      </g>
+      <g transform="translate(0 56)"><rect width="36" height="36" rx="9" fill="#1572B6"/><text x="18" y="24" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">CSS</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">CSS3 / Tailwind</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Responsive styling</text>
+      </g>
+      <g transform="translate(0 112)"><rect width="36" height="36" rx="9" fill="#E34C26"/><text x="18" y="24" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">JS</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">JavaScript ES2022</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Async / await · modules</text>
+      </g>
+      <g transform="translate(0 168)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🌐</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Axios</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">HTTP client + interceptors</text>
+      </g>
+      <g transform="translate(0 224)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🧭</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">React Router</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Client-side routes</text>
+      </g>
+      <g transform="translate(0 280)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🎚️</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Web Audio API</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Visualizers · volume</text>
+      </g>
+      <g transform="translate(0 336)"><rect width="36" height="36" rx="9" fill="#1DB954"/><text x="18" y="24" text-anchor="middle" font-size="16">▶️</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Web Playback SDK</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Streaming inside browser</text>
+      </g>
+      <g transform="translate(0 392)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🔧</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Webpack / Vite</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Bundler · HMR</text>
+      </g>
+    </g>
   </g>
-  
-  <!-- APIs Column -->
-  <g id="apis">
-    <rect x="770" y="120" width="320" height="800" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
-    <text x="930" y="160" font-size="20" fill="#1DB954" text-anchor="middle" font-weight="bold">External APIs</text>
-    
-    <!-- Spotify Web API -->
-    <rect x="790" y="190" width="280" height="100" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="930" y="215" font-size="14" fill="white" text-anchor="middle" font-weight="bold">🎵 Spotify Web API</text>
-    <text x="930" y="240" font-size="11" fill="#b3b3b3" text-anchor="middle">Search Tracks</text>
-    <text x="930" y="255" font-size="11" fill="#b3b3b3" text-anchor="middle">Get Playlists</text>
-    <text x="930" y="270" font-size="11" fill="#b3b3b3" text-anchor="middle">User Profile Data</text>
-    
-    <!-- Spotify Web Playback -->
-    <rect x="790" y="310" width="280" height="100" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="930" y="335" font-size="14" fill="white" text-anchor="middle" font-weight="bold">▶️ Web Playback API</text>
-    <text x="930" y="360" font-size="11" fill="#b3b3b3" text-anchor="middle">Play/Pause Control</text>
-    <text x="930" y="375" font-size="11" fill="#b3b3b3" text-anchor="middle">Volume Control</text>
-    <text x="930" y="390" font-size="11" fill="#b3b3b3" text-anchor="middle">Playback State</text>
-    
-    <!-- Auth Endpoints -->
-    <rect x="790" y="430" width="280" height="100" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="930" y="455" font-size="14" fill="white" text-anchor="middle" font-weight="bold">🔑 Auth Endpoints</text>
-    <text x="930" y="480" font-size="11" fill="#b3b3b3" text-anchor="middle">/authorize</text>
-    <text x="930" y="495" font-size="11" fill="#b3b3b3" text-anchor="middle">/callback</text>
-    <text x="930" y="510" font-size="11" fill="#b3b3b3" text-anchor="middle">/token refresh</text>
-    
-    <!-- Response Format -->
-    <rect x="790" y="550" width="280" height="100" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="930" y="575" font-size="14" fill="white" text-anchor="middle" font-weight="bold">📊 JSON Responses</text>
-    <text x="930" y="600" font-size="11" fill="#b3b3b3" text-anchor="middle">Track Metadata</text>
-    <text x="930" y="615" font-size="11" fill="#b3b3b3" text-anchor="middle">Album Info</text>
-    <text x="930" y="630" font-size="11" fill="#b3b3b3" text-anchor="middle">Artist Details</text>
-    
-    <!-- Rate Limiting -->
-    <rect x="790" y="670" width="280" height="100" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="930" y="695" font-size="14" fill="white" text-anchor="middle" font-weight="bold">⏱️ Rate Limiting</text>
-    <text x="930" y="720" font-size="11" fill="#b3b3b3" text-anchor="middle">Request Throttling</text>
-    <text x="930" y="735" font-size="11" fill="#b3b3b3" text-anchor="middle">Quota Management</text>
-    <text x="930" y="750" font-size="11" fill="#b3b3b3" text-anchor="middle">Refresh Token</text>
+
+  <!-- Backend -->
+  <g transform="translate(360 90)">
+    <rect width="280" height="600" rx="18" fill="#0E1F15" stroke="#1DB954" stroke-width="1.5"/>
+    <rect width="280" height="46" rx="18" fill="#0F6B30"/>
+    <text x="20" y="30" fill="#ffffff" font-size="14" font-weight="800">BACKEND</text>
+    <text x="260" y="30" fill="#7CE9A4" font-size="11" font-weight="700" text-anchor="end">Node.js</text>
+
+    <g transform="translate(20 70)" font-size="13">
+      <g><rect width="36" height="36" rx="9" fill="#339933"/><text x="18" y="24" text-anchor="middle" font-size="16" fill="#fff">N</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Node.js 18+</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Server runtime</text>
+      </g>
+      <g transform="translate(0 56)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">⚡</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Express.js</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Routing &amp; middleware</text>
+      </g>
+      <g transform="translate(0 112)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🔁</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">CORS</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Cross-origin policy</text>
+      </g>
+      <g transform="translate(0 168)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">📦</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">body-parser</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">JSON ingest</text>
+      </g>
+      <g transform="translate(0 224)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🍪</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">cookie-session</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Token persistence</text>
+      </g>
+      <g transform="translate(0 280)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🪝</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">dotenv</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Env config</text>
+      </g>
+      <g transform="translate(0 336)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🧪</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Jest + Supertest</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Unit + route tests</text>
+      </g>
+      <g transform="translate(0 392)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">📜</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">winston / morgan</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Structured logging</text>
+      </g>
+    </g>
   </g>
-  
-  <!-- Integration Info -->
-  <g id="integration">
-    <rect x="1130" y="120" width="240" height="800" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
-    <text x="1250" y="160" font-size="18" fill="#1DB954" text-anchor="middle" font-weight="bold">Integration</text>
-    
-    <!-- Language Composition -->
-    <rect x="1150" y="190" width="200" height="140" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="1250" y="215" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Language Mix</text>
-    <text x="1250" y="240" font-size="11" fill="#1DB954" text-anchor="middle">JavaScript: 89.3%</text>
-    <text x="1250" y="260" font-size="11" fill="#FFD700" text-anchor="middle">CSS: 8.5%</text>
-    <text x="1250" y="280" font-size="11" fill="#E34C26" text-anchor="middle">HTML: 2.2%</text>
-    
-    <!-- Communication -->
-    <rect x="1150" y="350" width="200" height="120" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="1250" y="375" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Communication</text>
-    <text x="1250" y="400" font-size="11" fill="#b3b3b3" text-anchor="middle">HTTP/REST</text>
-    <text x="1250" y="420" font-size="11" fill="#b3b3b3" text-anchor="middle">JSON Format</text>
-    <text x="1250" y="440" font-size="11" fill="#b3b3b3" text-anchor="middle">Bearer Token</text>
-    
-    <!-- Key Features -->
-    <rect x="1150" y="490" width="200" height="180" fill="#1DB954" opacity="0.1" rx="6"/>
-    <text x="1250" y="515" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Key Features</text>
-    <text x="1250" y="540" font-size="10" fill="#b3b3b3" text-anchor="middle">✓ Real-time Search</text>
-    <text x="1250" y="560" font-size="10" fill="#b3b3b3" text-anchor="middle">✓ Music Playback</text>
-    <text x="1250" y="580" font-size="10" fill="#b3b3b3" text-anchor="middle">✓ User Profiles</text>
-    <text x="1250" y="600" font-size="10" fill="#b3b3b3" text-anchor="middle">✓ Playlists</text>
-    <text x="1250" y="620" font-size="10" fill="#b3b3b3" text-anchor="middle">✓ Responsive</text>
-    <text x="1250" y="640" font-size="10" fill="#b3b3b3" text-anchor="middle">✓ Secure Auth</text>
+
+  <!-- Auth & Data -->
+  <g transform="translate(660 90)">
+    <rect width="280" height="600" rx="18" fill="#1A0E22" stroke="#A56AC9" stroke-width="1.5"/>
+    <rect width="280" height="46" rx="18" fill="#5B2A6E"/>
+    <text x="20" y="30" fill="#ffffff" font-size="14" font-weight="800">AUTH &amp; DATA</text>
+    <text x="260" y="30" fill="#D9B1F0" font-size="11" font-weight="700" text-anchor="end">OAuth 2.0</text>
+
+    <g transform="translate(20 70)" font-size="13">
+      <g><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🔐</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">OAuth 2.0 PKCE</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Authorization Code flow</text>
+      </g>
+      <g transform="translate(0 56)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🪪</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">JWT</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Session token signing</text>
+      </g>
+      <g transform="translate(0 112)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">♻️</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Token refresh</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Auto-renew on 401</text>
+      </g>
+      <g transform="translate(0 168)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🛡️</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">helmet</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Security headers</text>
+      </g>
+      <g transform="translate(0 224)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🚦</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">express-rate-limit</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Anti-abuse</text>
+      </g>
+      <g transform="translate(0 280)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">💾</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">In-memory LRU</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Hot search cache 60s</text>
+      </g>
+      <g transform="translate(0 336)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🗃️</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">SQLite (optional)</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Saved playlists</text>
+      </g>
+      <g transform="translate(0 392)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">📐</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Zod / Joi</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Schema validation</text>
+      </g>
+    </g>
   </g>
+
+  <!-- External APIs -->
+  <g transform="translate(960 90)">
+    <rect width="280" height="600" rx="18" fill="#22150A" stroke="#E8A23A" stroke-width="1.5"/>
+    <rect width="280" height="46" rx="18" fill="#6E3A1A"/>
+    <text x="20" y="30" fill="#ffffff" font-size="14" font-weight="800">EXTERNAL APIs</text>
+    <text x="260" y="30" fill="#FFD79A" font-size="11" font-weight="700" text-anchor="end">Spotify</text>
+
+    <g transform="translate(20 70)" font-size="13">
+      <g><rect width="36" height="36" rx="9" fill="#1DB954"/><text x="18" y="24" text-anchor="middle" font-size="16">🎵</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Spotify Web API</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Search · users · playlists</text>
+      </g>
+      <g transform="translate(0 56)"><rect width="36" height="36" rx="9" fill="#1DB954"/><text x="18" y="24" text-anchor="middle" font-size="16">▶️</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Web Playback API</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Premium streaming</text>
+      </g>
+      <g transform="translate(0 112)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🔑</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Accounts Service</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">accounts.spotify.com</text>
+      </g>
+      <g transform="translate(0 168)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🖼️</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">CDN</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">i.scdn.co · p.scdn.co</text>
+      </g>
+      <g transform="translate(0 224)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">📊</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Audio Features</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Tempo · key · energy</text>
+      </g>
+      <g transform="translate(0 280)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🎯</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Recommendations</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Seed-based suggestions</text>
+      </g>
+      <g transform="translate(0 336)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🌍</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Browse / Markets</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Featured · new releases</text>
+      </g>
+      <g transform="translate(0 392)"><rect width="36" height="36" rx="9" fill="#23272F"/><text x="18" y="24" text-anchor="middle" font-size="16">🎤</text>
+        <text x="48" y="16" fill="#ffffff" font-weight="800">Top Tracks / Artists</text>
+        <text x="48" y="30" fill="#B3B3B3" font-size="10">Personalized for user</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- footer note -->
+  <text x="640" y="704" text-anchor="middle" fill="#666" font-size="10">All trademarks belong to their respective owners. This is an educational clone using the official Spotify Web API.</text>
 </svg>

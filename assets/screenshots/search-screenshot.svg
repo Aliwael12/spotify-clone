@@ -1,63 +1,186 @@
-<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="1200" height="800" fill="#0f0f0f"/>
-  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" font-family="'Circular','Inter','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <linearGradient id="topfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3D2A6B"/><stop offset="100%" stop-color="#121212"/></linearGradient>
+    <linearGradient id="topResult" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9B59B6"/><stop offset="100%" stop-color="#3A1B6B"/></linearGradient>
+    <linearGradient id="g-pop" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E61E32"/><stop offset="100%" stop-color="#8C0C18"/></linearGradient>
+    <linearGradient id="g-hh" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1E3264"/><stop offset="100%" stop-color="#0E1A40"/></linearGradient>
+    <linearGradient id="g-rb" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E91429"/><stop offset="100%" stop-color="#7A0A14"/></linearGradient>
+    <linearGradient id="g-co" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A56752"/><stop offset="100%" stop-color="#5A2F22"/></linearGradient>
+    <linearGradient id="g-la" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#27AE60"/><stop offset="100%" stop-color="#145A32"/></linearGradient>
+    <linearGradient id="g-da" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F037A5"/><stop offset="100%" stop-color="#8C145C"/></linearGradient>
+    <linearGradient id="g-ind" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#EC1E32"/><stop offset="100%" stop-color="#7A0A14"/></linearGradient>
+    <linearGradient id="g-mood" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F8B500"/><stop offset="100%" stop-color="#B8860B"/></linearGradient>
+    <linearGradient id="g-jazz" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7358FF"/><stop offset="100%" stop-color="#3A1B8C"/></linearGradient>
+    <linearGradient id="np" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9B59B6"/><stop offset="100%" stop-color="#3A1B6B"/></linearGradient>
+  </defs>
+
+  <rect width="1280" height="800" fill="#000000"/>
+
   <!-- Sidebar -->
-  <rect width="250" height="800" fill="#121212"/>
-  <circle cx="125" cy="50" r="30" fill="#1DB954"/>
-  <text x="125" y="58" font-size="28" font-weight="bold" fill="white" text-anchor="middle">♪</text>
-  
-  <!-- Main Content Area -->
-  <rect x="250" y="0" width="950" height="800" fill="#181818"/>
-  
-  <!-- Search Header -->
-  <rect x="250" y="20" width="900" height="60" fill="#282828" rx="30"/>
-  <text x="280" y="58" font-size="16" fill="#b3b3b3">🔍 Search songs, artists, playlists...</text>
-  
-  <!-- Search Results Title -->
-  <text x="270" y="120" font-size="20" fill="white" font-weight="bold">Search Results for "Jazz"</text>
-  
-  <!-- Track Results -->
-  <g id="track1">
-    <rect x="270" y="140" width="900" height="80" fill="#282828" rx="8"/>
-    <rect x="280" y="150" width="60" height="60" fill="#1DB954" rx="4"/>
-    <text x="310" y="190" font-size="24" fill="white" text-anchor="middle" font-weight="bold">♪</text>
-    <text x="360" y="170" font-size="16" fill="white" font-weight="bold">Blue Moon</text>
-    <text x="360" y="190" font-size="12" fill="#b3b3b3">Miles Davis • Jazz Classics</text>
-    <text x="1130" y="185" font-size="14" fill="#1DB954" text-anchor="end">3:45</text>
+  <rect x="0" y="0" width="240" height="720" fill="#000000"/>
+  <g transform="translate(24 28)">
+    <circle cx="14" cy="14" r="14" fill="#1DB954"/>
+    <path d="M6 12 q8 -3 16 0 M7 16 q7 -2.5 14 0 M8 20 q6 -2 12 0" stroke="#000000" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <text x="38" y="20" fill="#ffffff" font-size="16" font-weight="800">Spotify Clone</text>
   </g>
-  
-  <g id="track2">
-    <rect x="270" y="240" width="900" height="80" fill="#282828" rx="8"/>
-    <rect x="280" y="250" width="60" height="60" fill="#1DB954" rx="4"/>
-    <text x="310" y="290" font-size="24" fill="white" text-anchor="middle" font-weight="bold">♫</text>
-    <text x="360" y="270" font-size="16" fill="white" font-weight="bold">Autumn Leaves</text>
-    <text x="360" y="290" font-size="12" fill="#b3b3b3">Bill Evans • Jazz Standards</text>
-    <text x="1130" y="285" font-size="14" fill="#1DB954" text-anchor="end">4:12</text>
+  <g transform="translate(24 76)" font-size="13" font-weight="700">
+    <g><path d="M0 12 l10 -10 l10 10 v10 h-20 z" fill="none" stroke="#B3B3B3" stroke-width="2"/><text x="32" y="18" fill="#B3B3B3">Home</text></g>
+    <g transform="translate(0 36)"><circle cx="10" cy="12" r="8" fill="none" stroke="#ffffff" stroke-width="2"/><line x1="16" y1="18" x2="22" y2="24" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/><text x="32" y="18" fill="#ffffff">Search</text></g>
+    <g transform="translate(0 72)"><rect width="20" height="20" rx="3" fill="none" stroke="#B3B3B3" stroke-width="2"/><line x1="6" y1="8" x2="14" y2="8" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round"/><line x1="6" y1="14" x2="10" y2="14" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round"/><text x="32" y="18" fill="#B3B3B3">Your Library</text></g>
   </g>
-  
-  <g id="track3">
-    <rect x="270" y="340" width="900" height="80" fill="#282828" rx="8"/>
-    <rect x="280" y="350" width="60" height="60" fill="#1DB954" rx="4"/>
-    <text x="310" y="390" font-size="24" fill="white" text-anchor="middle" font-weight="bold">🎵</text>
-    <text x="360" y="370" font-size="16" fill="white" font-weight="bold">Take Five</text>
-    <text x="360" y="390" font-size="12" fill="#b3b3b3">Dave Brubeck Quartet • Time Out</text>
-    <text x="1130" y="385" font-size="14" fill="#1DB954" text-anchor="end">5:24</text>
+
+  <!-- Main -->
+  <rect x="240" y="0" width="1040" height="160" fill="url(#topfade)"/>
+  <rect x="240" y="160" width="1040" height="560" fill="#121212"/>
+
+  <!-- Top bar -->
+  <g transform="translate(264 28)">
+    <circle r="16" cx="16" cy="16" fill="#000000"/>
+    <path d="M20 10 l-6 6 l6 6" stroke="#ffffff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
   </g>
-  
-  <g id="track4">
-    <rect x="270" y="440" width="900" height="80" fill="#282828" rx="8"/>
-    <rect x="280" y="450" width="60" height="60" fill="#1DB954" rx="4"/>
-    <text x="310" y="490" font-size="24" fill="white" text-anchor="middle" font-weight="bold">♪</text>
-    <text x="360" y="470" font-size="16" fill="white" font-weight="bold">Fly Me to the Moon</text>
-    <text x="360" y="490" font-size="12" fill="#b3b3b3">Frank Sinatra • Songs for Swingin' Lovers</text>
-    <text x="1130" y="485" font-size="14" fill="#1DB954" text-anchor="end">2:58</text>
+  <g transform="translate(308 28)">
+    <circle r="16" cx="16" cy="16" fill="#000000"/>
+    <path d="M14 10 l6 6 l-6 6" stroke="#ffffff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
   </g>
-  
-  <!-- Now Playing Bar -->
-  <rect x="0" y="700" width="1200" height="100" fill="#181818" stroke="#282828" stroke-width="1"/>
-  <circle cx="60" cy="750" r="30" fill="#1DB954"/>
-  <text x="60" y="758" font-size="24" fill="white" text-anchor="middle">♪</text>
-  <text x="100" y="745" font-size="14" fill="white" font-weight="bold">Now Playing</text>
-  <text x="100" y="765" font-size="12" fill="#b3b3b3">Blue Moon - Miles Davis</text>
+  <!-- Search input -->
+  <g transform="translate(354 24)">
+    <rect width="364" height="40" rx="20" fill="#ffffff"/>
+    <circle cx="20" cy="20" r="8" fill="none" stroke="#000000" stroke-width="2"/>
+    <line x1="26" y1="26" x2="32" y2="32" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    <text x="40" y="26" fill="#000000" font-size="13" font-weight="600">billie eilish</text>
+    <line x1="40" y1="29" x2="120" y2="29" stroke="#1DB954" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  <g transform="translate(1182 28)">
+    <circle r="16" cx="16" cy="16" fill="#1A1A1A"/>
+    <text x="16" y="20" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">A</text>
+  </g>
+
+  <!-- Filter pills -->
+  <g transform="translate(264 86)" font-size="11" font-weight="800">
+    <g><rect width="48" height="26" rx="13" fill="#ffffff"/><text x="24" y="17" text-anchor="middle" fill="#000000">All</text></g>
+    <g transform="translate(56 0)"><rect width="60" height="26" rx="13" fill="#232323"/><text x="30" y="17" text-anchor="middle" fill="#ffffff">Songs</text></g>
+    <g transform="translate(124 0)"><rect width="64" height="26" rx="13" fill="#232323"/><text x="32" y="17" text-anchor="middle" fill="#ffffff">Artists</text></g>
+    <g transform="translate(196 0)"><rect width="64" height="26" rx="13" fill="#232323"/><text x="32" y="17" text-anchor="middle" fill="#ffffff">Albums</text></g>
+    <g transform="translate(268 0)"><rect width="76" height="26" rx="13" fill="#232323"/><text x="38" y="17" text-anchor="middle" fill="#ffffff">Playlists</text></g>
+    <g transform="translate(352 0)"><rect width="76" height="26" rx="13" fill="#232323"/><text x="38" y="17" text-anchor="middle" fill="#ffffff">Podcasts</text></g>
+  </g>
+
+  <!-- Top result + songs columns -->
+  <text x="264" y="156" fill="#ffffff" font-size="22" font-weight="900">Top result</text>
+  <g transform="translate(264 174)">
+    <rect width="380" height="220" rx="8" fill="#181818"/>
+    <rect x="20" y="20" width="100" height="100" rx="50" fill="url(#topResult)"/>
+    <text x="70" y="80" text-anchor="middle" fill="#ffffff" font-size="40" font-weight="900">BE</text>
+    <text x="20" y="148" fill="#ffffff" font-size="28" font-weight="900">Billie Eilish</text>
+    <g transform="translate(20 162)">
+      <rect width="64" height="22" rx="11" fill="#000000"/>
+      <text x="32" y="15" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="800">Artist</text>
+    </g>
+    <text x="92" y="178" fill="#B3B3B3" font-size="11">· 96.4M monthly listeners</text>
+    <circle cx="338" cy="174" r="22" fill="#1DB954"/>
+    <path d="M333 166 v16 l13 -8 z" fill="#000000"/>
+  </g>
+
+  <text x="664" y="156" fill="#ffffff" font-size="22" font-weight="900">Songs</text>
+  <g transform="translate(664 174)" font-size="12">
+    <!-- row 1 -->
+    <g>
+      <rect width="592" height="56" rx="6" fill="#181818"/>
+      <rect x="8" y="8" width="40" height="40" rx="4" fill="url(#topResult)"/>
+      <text x="28" y="34" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="900">BE</text>
+      <text x="60" y="26" fill="#ffffff" font-weight="700">Birds Of A Feather</text>
+      <text x="60" y="42" fill="#B3B3B3">Billie Eilish</text>
+      <text x="488" y="34" fill="#B3B3B3">3:30</text>
+      <circle cx="528" cy="28" r="11" fill="none" stroke="#B3B3B3" stroke-width="1.5"/>
+      <path d="M525 24 v8 l6 -4 z" fill="#B3B3B3"/>
+    </g>
+    <g transform="translate(0 64)">
+      <rect width="592" height="56" rx="6" fill="#1F1F1F"/>
+      <rect x="8" y="8" width="40" height="40" rx="4" fill="#000000"/>
+      <text x="28" y="34" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="900">BB</text>
+      <text x="60" y="26" fill="#ffffff" font-weight="700">bad guy</text>
+      <text x="60" y="42" fill="#B3B3B3">Billie Eilish</text>
+      <text x="488" y="34" fill="#B3B3B3">3:14</text>
+    </g>
+    <g transform="translate(0 128)">
+      <rect width="592" height="56" rx="6" fill="#181818"/>
+      <rect x="8" y="8" width="40" height="40" rx="4" fill="#3D2A6B"/>
+      <text x="28" y="34" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="900">LA</text>
+      <text x="60" y="26" fill="#ffffff" font-weight="700">LUNCH</text>
+      <text x="60" y="42" fill="#B3B3B3">Billie Eilish</text>
+      <text x="488" y="34" fill="#B3B3B3">2:59</text>
+    </g>
+    <g transform="translate(0 192)">
+      <rect width="592" height="56" rx="6" fill="#181818"/>
+      <rect x="8" y="8" width="40" height="40" rx="4" fill="#5A2F22"/>
+      <text x="28" y="34" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="900">WI</text>
+      <text x="60" y="26" fill="#ffffff" font-weight="700">What Was I Made For?</text>
+      <text x="60" y="42" fill="#B3B3B3">Billie Eilish</text>
+      <text x="488" y="34" fill="#B3B3B3">3:42</text>
+    </g>
+  </g>
+
+  <!-- Browse all section -->
+  <text x="264" y="430" fill="#ffffff" font-size="22" font-weight="900">Browse all</text>
+  <g transform="translate(264 450)">
+    <g><rect width="195" height="120" rx="8" fill="url(#g-pop)"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">Pop</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#000000" opacity="0.4" transform="rotate(25 158 98)"/>
+    </g>
+    <g transform="translate(207 0)"><rect width="195" height="120" rx="8" fill="url(#g-hh)"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">Hip-Hop</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#ffffff" opacity="0.2" transform="rotate(25 158 98)"/>
+    </g>
+    <g transform="translate(414 0)"><rect width="195" height="120" rx="8" fill="url(#g-rb)"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">R&amp;B</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#ffffff" opacity="0.2" transform="rotate(25 158 98)"/>
+    </g>
+    <g transform="translate(621 0)"><rect width="195" height="120" rx="8" fill="url(#g-co)"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">Country</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#000000" opacity="0.4" transform="rotate(25 158 98)"/>
+    </g>
+    <g transform="translate(828 0)"><rect width="195" height="120" rx="8" fill="url(#g-la)"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">Latin</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#000000" opacity="0.4" transform="rotate(25 158 98)"/>
+    </g>
+  </g>
+  <g transform="translate(264 580)">
+    <g><rect width="195" height="120" rx="8" fill="url(#g-da)"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">Dance</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#000000" opacity="0.4" transform="rotate(25 158 98)"/>
+    </g>
+    <g transform="translate(207 0)"><rect width="195" height="120" rx="8" fill="url(#g-ind)"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">Indie</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#ffffff" opacity="0.2" transform="rotate(25 158 98)"/>
+    </g>
+    <g transform="translate(414 0)"><rect width="195" height="120" rx="8" fill="url(#g-mood)"/><text x="14" y="36" fill="#000000" font-size="20" font-weight="900">Mood</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#000000" opacity="0.3" transform="rotate(25 158 98)"/>
+    </g>
+    <g transform="translate(621 0)"><rect width="195" height="120" rx="8" fill="url(#g-jazz)"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">Jazz</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#ffffff" opacity="0.2" transform="rotate(25 158 98)"/>
+    </g>
+    <g transform="translate(828 0)"><rect width="195" height="120" rx="8" fill="#1B5E20"/><text x="14" y="36" fill="#ffffff" font-size="20" font-weight="900">Workout</text>
+      <rect x="120" y="60" width="76" height="76" rx="6" fill="#ffffff" opacity="0.2" transform="rotate(25 158 98)"/>
+    </g>
+  </g>
+
+  <!-- Now playing -->
+  <rect y="720" width="1280" height="80" fill="#181818"/>
+  <g transform="translate(16 730)">
+    <rect width="60" height="60" rx="4" fill="url(#np)"/>
+    <text x="30" y="36" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="900">BE</text>
+  </g>
+  <g transform="translate(92 730)">
+    <text y="22" fill="#ffffff" font-size="13" font-weight="700">Birds Of A Feather</text>
+    <text y="40" fill="#B3B3B3" font-size="11">Billie Eilish</text>
+  </g>
+  <g transform="translate(540 736)">
+    <path d="M0 6 q8 -8 16 0 M22 12 l4 -2 l-4 -2 M0 14 q8 8 16 0 M22 8 l4 2 l-4 2" stroke="#B3B3B3" stroke-width="1.5" fill="none"/>
+    <g transform="translate(40 0)"><rect width="2" height="14" fill="#B3B3B3"/><path d="M14 0 l-12 7 l12 7 z" fill="#B3B3B3"/></g>
+    <g transform="translate(80 -8)"><circle r="14" cx="14" cy="14" fill="#ffffff"/><path d="M10 6 v16 l12 -8 z" fill="#000000"/></g>
+    <g transform="translate(132 0)"><path d="M0 0 l12 7 l-12 7 z" fill="#ffffff"/><rect x="14" width="2" height="14" fill="#ffffff"/></g>
+    <g transform="translate(160 0)"><path d="M0 8 a6 6 0 0 1 6 -6 h12 M16 -2 l4 4 l-4 4 M22 8 a6 6 0 0 1 -6 6 h-12 M6 18 l-4 -4 l4 -4" stroke="#B3B3B3" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
+  </g>
+  <g transform="translate(440 770)" font-size="10" fill="#B3B3B3">
+    <text>0:48</text>
+    <rect x="32" y="3" width="320" height="4" rx="2" fill="#3F3F3F"/>
+    <rect x="32" y="3" width="80" height="4" rx="2" fill="#ffffff"/>
+    <circle cx="112" cy="5" r="5" fill="#ffffff"/>
+    <text x="358" y="0" dy="8">3:30</text>
+  </g>
 </svg>

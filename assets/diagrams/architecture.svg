@@ -1,148 +1,235 @@
-<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="1400" height="900" fill="#0f0f0f"/>
-  
-  <!-- Title -->
-  <text x="700" y="50" font-size="36" fill="#1DB954" text-anchor="middle" font-weight="bold">🏗️ System Architecture & Data Flow</text>
-  
-  <!-- Layer 1: Client/Frontend -->
-  <g id="frontend-layer">
-    <rect x="50" y="100" width="320" height="280" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
-    <text x="210" y="140" font-size="18" fill="#1DB954" text-anchor="middle" font-weight="bold">🖥️ Client Layer</text>
-    <text x="210" y="165" font-size="12" fill="#b3b3b3" text-anchor="middle">React.js Application</text>
-    
-    <!-- Components -->
-    <rect x="65" y="180" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="210" y="205" font-size="11" fill="white" text-anchor="middle">Components</text>
-    <text x="210" y="220" font-size="10" fill="#b3b3b3" text-anchor="middle">UI, Search, Player, Playlists</text>
-    
-    <!-- State Management -->
-    <rect x="65" y="240" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="210" y="265" font-size="11" fill="white" text-anchor="middle">State Management</text>
-    <text x="210" y="280" font-size="10" fill="#b3b3b3" text-anchor="middle">React Context / Redux</text>
-    
-    <!-- Event Handlers -->
-    <rect x="65" y="300" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="210" y="325" font-size="11" fill="white" text-anchor="middle">Event Handling</text>
-    <text x="210" y="340" font-size="10" fill="#b3b3b3" text-anchor="middle">User Interactions</text>
-  </g>
-  
-  <!-- Arrow 1: Client to Backend -->
-  <path d="M 370 240 L 420 240" stroke="#1DB954" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-  <text x="395" y="230" font-size="10" fill="#1DB954">HTTP Request</text>
-  
-  <!-- Layer 2: Backend/API Server -->
-  <g id="backend-layer">
-    <rect x="420" y="100" width="320" height="280" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
-    <text x="580" y="140" font-size="18" fill="#1DB954" text-anchor="middle" font-weight="bold">⚡ Backend Layer</text>
-    <text x="580" y="165" font-size="12" fill="#b3b3b3" text-anchor="middle">Node.js + Express</text>
-    
-    <!-- Routes -->
-    <rect x="435" y="180" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="580" y="205" font-size="11" fill="white" text-anchor="middle">API Routes</text>
-    <text x="580" y="220" font-size="10" fill="#b3b3b3" text-anchor="middle">/search, /playlist, /auth, /user</text>
-    
-    <!-- Middleware -->
-    <rect x="435" y="240" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="580" y="265" font-size="11" fill="white" text-anchor="middle">Middleware & Services</text>
-    <text x="580" y="280" font-size="10" fill="#b3b3b3" text-anchor="middle">Auth, CORS, Error Handling</text>
-    
-    <!-- Business Logic -->
-    <rect x="435" y="300" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="580" y="325" font-size="11" fill="white" text-anchor="middle">Business Logic</text>
-    <text x="580" y="340" font-size="10" fill="#b3b3b3" text-anchor="middle">Token Management, OAuth</text>
-  </g>
-  
-  <!-- Arrow 2: Backend to Spotify APIs -->
-  <path d="M 740 240 L 790 240" stroke="#1DB954" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-  <text x="765" y="230" font-size="10" fill="#1DB954">HTTP Request</text>
-  
-  <!-- Layer 3: External APIs -->
-  <g id="api-layer">
-    <rect x="790" y="100" width="320" height="280" fill="#282828" stroke="#1DB954" stroke-width="2" rx="8"/>
-    <text x="950" y="140" font-size="18" fill="#1DB954" text-anchor="middle" font-weight="bold">🎵 Spotify APIs</text>
-    <text x="950" y="165" font-size="12" fill="#b3b3b3" text-anchor="middle">External Services</text>
-    
-    <!-- Web API -->
-    <rect x="805" y="180" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="950" y="205" font-size="11" fill="white" text-anchor="middle">Web API</text>
-    <text x="950" y="220" font-size="10" fill="#b3b3b3" text-anchor="middle">Search, Playlists, User Data</text>
-    
-    <!-- WebPlayback API -->
-    <rect x="805" y="240" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="950" y="265" font-size="11" fill="white" text-anchor="middle">WebPlayback API</text>
-    <text x="950" y="280" font-size="10" fill="#b3b3b3" text-anchor="middle">Play, Pause, Volume Control</text>
-    
-    <!-- OAuth 2.0 -->
-    <rect x="805" y="300" width="290" height="50" fill="#1DB954" opacity="0.1" rx="4"/>
-    <text x="950" y="325" font-size="11" fill="white" text-anchor="middle">OAuth 2.0 Service</text>
-    <text x="950" y="340" font-size="10" fill="#b3b3b3" text-anchor="middle">Authentication & Tokens</text>
-  </g>
-  
-  <!-- Arrow 3: Spotify APIs back to Backend -->
-  <path d="M 790 400 L 740 400" stroke="#FFD700" stroke-width="3" fill="none" marker-end="url(#arrowhead-gold)"/>
-  <text x="750" y="420" font-size="10" fill="#FFD700">JSON Response</text>
-  
-  <!-- Arrow 4: Backend back to Client -->
-  <path d="M 420 400 L 370 400" stroke="#FFD700" stroke-width="3" fill="none" marker-end="url(#arrowhead-gold)"/>
-  <text x="375" y="420" font-size="10" fill="#FFD700">JSON Response</text>
-  
-  <!-- Data Flow Examples -->
-  <g id="example-flows">
-    <!-- Search Flow -->
-    <g id="search-flow">
-      <rect x="50" y="470" width="560" height="140" fill="#282828" opacity="0.5" rx="8" stroke="#1DB954" stroke-width="1" stroke-dasharray="5,5"/>
-      <text x="330" y="495" font-size="14" fill="#1DB954" text-anchor="middle" font-weight="bold">📝 Example: Search Flow</text>
-      
-      <text x="65" y="525" font-size="11" fill="white">1. User types: "Kind of Blue"</text>
-      <text x="65" y="545" font-size="11" fill="white">2. React sends: GET /api/search?q=Kind+of+Blue</text>
-      <text x="65" y="565" font-size="11" fill="white">3. Backend forwards to Spotify Web API</text>
-      <text x="65" y="585" font-size="11" fill="white">4. Spotify returns track data (JSON)</text>
-      <text x="65" y="605" font-size="11" fill="white">5. Backend processes & sends to React</text>
-    </g>
-    
-    <!-- Playback Flow -->
-    <g id="playback-flow">
-      <rect x="790" y="470" width="560" height="140" fill="#282828" opacity="0.5" rx="8" stroke="#1DB954" stroke-width="1" stroke-dasharray="5,5"/>
-      <text x="1070" y="495" font-size="14" fill="#1DB954" text-anchor="middle" font-weight="bold">▶️ Example: Playback Flow</text>
-      
-      <text x="805" y="525" font-size="11" fill="white">1. User clicks play button</text>
-      <text x="805" y="545" font-size="11" fill="white">2. React sends: POST /api/player/play</text>
-      <text x="805" y="565" font-size="11" fill="white">3. Backend calls Spotify WebPlayback API</text>
-      <text x="805" y="585" font-size="11" fill="white">4. Spotify begins playback on device</text>
-      <text x="805" y="605" font-size="11" fill="white">5. Real-time state updates to React</text>
-    </g>
-  </g>
-  
-  <!-- Key Technologies -->
-  <g id="technologies">
-    <rect x="50" y="700" width="1280" height="150" fill="#282828" rx="8" stroke="#1DB954" stroke-width="1"/>
-    <text x="690" y="730" font-size="14" fill="#1DB954" text-anchor="middle" font-weight="bold">🛠️ Key Technologies & Security</text>
-    
-    <!-- Frontend Tech -->
-    <text x="70" y="760" font-size="11" fill="white" font-weight="bold">Frontend:</text>
-    <text x="70" y="778" font-size="10" fill="#b3b3b3">React.js • JavaScript ES6+ • CSS3 • Axios/Fetch</text>
-    
-    <!-- Backend Tech -->
-    <text x="70" y="805" font-size="11" fill="white" font-weight="bold">Backend:</text>
-    <text x="70" y="823" font-size="10" fill="#b3b3b3">Node.js • Express.js • OAuth 2.0 • RESTful API</text>
-    
-    <!-- Security -->
-    <text x="550" y="760" font-size="11" fill="white" font-weight="bold">Security:</text>
-    <text x="550" y="778" font-size="10" fill="#b3b3b3">Bearer Token Authentication • CORS Protection • HTTPS</text>
-    
-    <!-- APIs -->
-    <text x="550" y="805" font-size="11" fill="white" font-weight="bold">External APIs:</text>
-    <text x="550" y="823" font-size="10" fill="#b3b3b3">Spotify Web API • Spotify WebPlayback API • OAuth 2.0</text>
-  </g>
-  
-  <!-- Arrow Marker Definition -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="'Inter','Segoe UI',system-ui,sans-serif">
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#1DB954"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F0F0F"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1ED760"/>
+      <stop offset="100%" stop-color="#0F8A3E"/>
+    </linearGradient>
+    <linearGradient id="lane-client" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1A2D6B" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1A2D6B" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="lane-api" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1B5E3C" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1B5E3C" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="lane-svc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5B2A6E" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#5B2A6E" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="lane-ext" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6E3A1A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6E3A1A" stop-opacity="0.1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1DB954"/>
     </marker>
-    <marker id="arrowhead-gold" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#FFD700"/>
+    <marker id="arrow-back" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#888"/>
     </marker>
   </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- title -->
+  <g transform="translate(40 36)">
+    <circle cx="14" cy="14" r="14" fill="#1DB954"/>
+    <path d="M6 12 q8 -3 16 0 M7 16 q7 -2.5 14 0 M8 20 q6 -2 12 0" stroke="#000" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <text x="38" y="20" fill="#ffffff" font-size="20" font-weight="800">System Architecture</text>
+    <text y="42" fill="#B3B3B3" font-size="12">Spotify Clone — request/response flow across four layers</text>
+  </g>
+
+  <!-- Lane labels -->
+  <g font-size="11" font-weight="800" letter-spacing="2" fill="#888888">
+    <text x="40" y="118">CLIENT</text>
+    <text x="40" y="276">API</text>
+    <text x="40" y="434">SERVICES</text>
+    <text x="40" y="592">EXTERNAL</text>
+  </g>
+
+  <!-- Lane backgrounds -->
+  <rect x="120" y="92"  width="1120" height="120" rx="14" fill="url(#lane-client)"/>
+  <rect x="120" y="250" width="1120" height="120" rx="14" fill="url(#lane-api)"/>
+  <rect x="120" y="408" width="1120" height="120" rx="14" fill="url(#lane-svc)"/>
+  <rect x="120" y="566" width="1120" height="120" rx="14" fill="url(#lane-ext)"/>
+
+  <!-- CLIENT boxes -->
+  <g transform="translate(160 110)">
+    <rect width="200" height="84" rx="12" fill="#181828" stroke="#3D5BDB" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#9FB1FF" font-size="10" font-weight="800">REACT · BROWSER</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Pages &amp; Components</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">Home · Search · Playlist</text>
+  </g>
+  <g transform="translate(388 110)">
+    <rect width="200" height="84" rx="12" fill="#181828" stroke="#3D5BDB" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#9FB1FF" font-size="10" font-weight="800">PLAYBACK SDK</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Web Playback</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">EME · Connect device</text>
+  </g>
+  <g transform="translate(616 110)">
+    <rect width="200" height="84" rx="12" fill="#181828" stroke="#3D5BDB" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#9FB1FF" font-size="10" font-weight="800">STATE</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Auth + Player</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">Tokens · queue · volume</text>
+  </g>
+  <g transform="translate(844 110)">
+    <rect width="200" height="84" rx="12" fill="#181828" stroke="#3D5BDB" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#9FB1FF" font-size="10" font-weight="800">HTTP CLIENT</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Axios / fetch</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">JSON · interceptors</text>
+  </g>
+
+  <!-- API boxes -->
+  <g transform="translate(160 268)">
+    <rect width="200" height="84" rx="12" fill="#0F2918" stroke="#1DB954" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#7CE9A4" font-size="10" font-weight="800">EXPRESS · /api</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Route Handlers</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">/auth · /search · /me</text>
+  </g>
+  <g transform="translate(388 268)">
+    <rect width="200" height="84" rx="12" fill="#0F2918" stroke="#1DB954" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#7CE9A4" font-size="10" font-weight="800">MIDDLEWARE</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">CORS · Body · Auth</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">Validates &amp; injects user</text>
+  </g>
+  <g transform="translate(616 268)">
+    <rect width="200" height="84" rx="12" fill="#0F2918" stroke="#1DB954" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#7CE9A4" font-size="10" font-weight="800">CONTROLLERS</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Business Logic</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">Search · playlist · player</text>
+  </g>
+  <g transform="translate(844 268)">
+    <rect width="200" height="84" rx="12" fill="#0F2918" stroke="#1DB954" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#7CE9A4" font-size="10" font-weight="800">ERROR HANDLER</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Normalized JSON</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">{ error, code, hint }</text>
+  </g>
+
+  <!-- SERVICES boxes -->
+  <g transform="translate(160 426)">
+    <rect width="200" height="84" rx="12" fill="#2A1530" stroke="#A56AC9" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#D9B1F0" font-size="10" font-weight="800">OAUTH 2.0</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Authorization Code</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">PKCE · scopes · state</text>
+  </g>
+  <g transform="translate(388 426)">
+    <rect width="200" height="84" rx="12" fill="#2A1530" stroke="#A56AC9" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#D9B1F0" font-size="10" font-weight="800">TOKEN STORE</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Access &amp; Refresh</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">Auto-refresh on 401</text>
+  </g>
+  <g transform="translate(616 426)">
+    <rect width="200" height="84" rx="12" fill="#2A1530" stroke="#A56AC9" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#D9B1F0" font-size="10" font-weight="800">SPOTIFY SERVICE</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">API Wrapper</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">Typed query helpers</text>
+  </g>
+  <g transform="translate(844 426)">
+    <rect width="200" height="84" rx="12" fill="#2A1530" stroke="#A56AC9" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#D9B1F0" font-size="10" font-weight="800">CACHE</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">In-memory LRU</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">TTL 60s · search results</text>
+  </g>
+
+  <!-- EXTERNAL boxes -->
+  <g transform="translate(160 584)">
+    <rect width="200" height="84" rx="12" fill="#2E1B0E" stroke="#E8A23A" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#FFD79A" font-size="10" font-weight="800">SPOTIFY ACCOUNTS</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">/authorize · /token</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">accounts.spotify.com</text>
+  </g>
+  <g transform="translate(388 584)">
+    <rect width="200" height="84" rx="12" fill="#2E1B0E" stroke="#E8A23A" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#FFD79A" font-size="10" font-weight="800">WEB API</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">/v1/search · /me</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">api.spotify.com</text>
+  </g>
+  <g transform="translate(616 584)">
+    <rect width="200" height="84" rx="12" fill="#2E1B0E" stroke="#E8A23A" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#FFD79A" font-size="10" font-weight="800">PLAYER API</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">/me/player/*</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">play · pause · seek · vol</text>
+  </g>
+  <g transform="translate(844 584)">
+    <rect width="200" height="84" rx="12" fill="#2E1B0E" stroke="#E8A23A" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#FFD79A" font-size="10" font-weight="800">CDN</text>
+    <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="800">Album art &amp; previews</text>
+    <text x="14" y="68" fill="#B3B3B3" font-size="11">i.scdn.co · p.scdn.co</text>
+  </g>
+
+  <!-- Flow arrows down -->
+  <g stroke="#1DB954" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M260 194 v74"/>
+    <path d="M488 194 v74"/>
+    <path d="M716 194 v74"/>
+    <path d="M944 194 v74"/>
+
+    <path d="M260 352 v74"/>
+    <path d="M488 352 v74"/>
+    <path d="M716 352 v74"/>
+    <path d="M944 352 v74"/>
+
+    <path d="M260 510 v74"/>
+    <path d="M488 510 v74"/>
+    <path d="M716 510 v74"/>
+    <path d="M944 510 v74"/>
+  </g>
+
+  <!-- Right side: data flow numbered -->
+  <g transform="translate(1080 110)" font-size="11">
+    <rect width="160" height="558" rx="14" fill="#0F0F0F" stroke="#282828"/>
+    <text x="14" y="24" fill="#1DB954" font-weight="800" letter-spacing="1">REQUEST FLOW</text>
+
+    <g transform="translate(14 50)">
+      <circle r="12" fill="#1DB954"/>
+      <text text-anchor="middle" y="4" fill="#000" font-size="11" font-weight="900">1</text>
+      <text x="22" y="2" fill="#ffffff" font-weight="700">User clicks ▶</text>
+      <text x="22" y="16" fill="#B3B3B3">React triggers action</text>
+    </g>
+    <g transform="translate(14 110)">
+      <circle r="12" fill="#1DB954"/>
+      <text text-anchor="middle" y="4" fill="#000" font-size="11" font-weight="900">2</text>
+      <text x="22" y="2" fill="#ffffff" font-weight="700">Axios → /api</text>
+      <text x="22" y="16" fill="#B3B3B3">Bearer token attached</text>
+    </g>
+    <g transform="translate(14 170)">
+      <circle r="12" fill="#1DB954"/>
+      <text text-anchor="middle" y="4" fill="#000" font-size="11" font-weight="900">3</text>
+      <text x="22" y="2" fill="#ffffff" font-weight="700">Express routes it</text>
+      <text x="22" y="16" fill="#B3B3B3">Auth middleware checks</text>
+    </g>
+    <g transform="translate(14 230)">
+      <circle r="12" fill="#1DB954"/>
+      <text text-anchor="middle" y="4" fill="#000" font-size="11" font-weight="900">4</text>
+      <text x="22" y="2" fill="#ffffff" font-weight="700">Service → cache?</text>
+      <text x="22" y="16" fill="#B3B3B3">Hit returns instantly</text>
+    </g>
+    <g transform="translate(14 290)">
+      <circle r="12" fill="#1DB954"/>
+      <text text-anchor="middle" y="4" fill="#000" font-size="11" font-weight="900">5</text>
+      <text x="22" y="2" fill="#ffffff" font-weight="700">Spotify Web API</text>
+      <text x="22" y="16" fill="#B3B3B3">Refresh on 401, retry</text>
+    </g>
+    <g transform="translate(14 350)">
+      <circle r="12" fill="#1DB954"/>
+      <text text-anchor="middle" y="4" fill="#000" font-size="11" font-weight="900">6</text>
+      <text x="22" y="2" fill="#ffffff" font-weight="700">JSON response</text>
+      <text x="22" y="16" fill="#B3B3B3">Mapped to UI model</text>
+    </g>
+    <g transform="translate(14 410)">
+      <circle r="12" fill="#1DB954"/>
+      <text text-anchor="middle" y="4" fill="#000" font-size="11" font-weight="900">7</text>
+      <text x="22" y="2" fill="#ffffff" font-weight="700">Player SDK plays</text>
+      <text x="22" y="16" fill="#B3B3B3">Audio via CDN preview</text>
+    </g>
+    <g transform="translate(14 470)">
+      <circle r="12" fill="#1DB954"/>
+      <text text-anchor="middle" y="4" fill="#000" font-size="11" font-weight="900">8</text>
+      <text x="22" y="2" fill="#ffffff" font-weight="700">UI updates</text>
+      <text x="22" y="16" fill="#B3B3B3">Now-playing reflects</text>
+    </g>
+  </g>
 </svg>
